@@ -1,0 +1,50 @@
+html, body {
+  box-sizing: border-box;
+  margin: 20px;
+  background: #21222A;
+  font-family: 'Inter', sans-serif;
+
+}
+.App{
+  width: 60%;
+  margin: auto;
+}
+.react-bar {
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav--image{
+  width: 120px;
+}
+
+.react-bar > h3 {
+  color: #61DAFB;
+  font-size: 1.2em;
+}
+
+.react-bar > h4 {
+  font-size: 1em;
+  margin: 10px;
+  color: #E5E5E5;
+  
+}
+
+.main-container{
+  color: #E5E5E5;
+}
+
+.main-container > ul > li {
+  line-height: 2.2em;
+  
+}
+
+li::marker {
+  color: #61DAFB;
+  font-size: 25px;
+}
+
+.main-container > h1 {
+  font-weight: 600;
+}
