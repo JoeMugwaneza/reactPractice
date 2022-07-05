@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "prettier.endOfLine": "auto",
+    "prettier.jsxBracketSameLine": true,
+    "prettier.trailingComma": "all",
+    "prettier.useTabs": true,
+    "pretty-formatter.braceLine": true,
+    "pretty-formatter.commentLine": true,
+    "pretty-formatter.correct": true,
+    "pretty-formatter.cssInsertLines": true
+}
