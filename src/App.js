@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 // import {Main, Count} from './components/Main';
 // import Navbar from './components/Navbar'
-import Counter from './components/counter';
+import Counters from './components/counters';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       {/* <Navbar /> */}
       {/* <Count /> */}
 
-      <Counter />
+      <Counters />
     </React.Fragment>
   );
 }
