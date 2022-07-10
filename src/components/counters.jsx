@@ -5,9 +5,11 @@ class Counters extends Component {
     
 
     render() { 
+        const { onDelete, onIncrement, onReset, counters } = this.props;
+
         return (<div>
-            {this.props.counters.map(counter => <Counter key={counter.id} onIncrement={this.props.onIncrement} onDelete={this.props.onDelete}  counter={ counter} />)}
-            <button onClick={this.props.onReset} className="btn btn-success btn-sm m-2">Reset</button>
+            {counters.map(counter => <Counter key={counter.id} onIncrement={onIncrement} onDelete={onDelete}  counter={ counter} />)}
+            <button onClick={onReset} className="btn btn-success btn-sm m-2">Reset</button>
         </div>);
     }
 }
