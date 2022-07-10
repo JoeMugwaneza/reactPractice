@@ -16,14 +16,16 @@ class Counter extends Component {
     //     // return <ul>{this.state.tags.map(tag => <li key={tag}>{ tag}</li>) }</ul>
     // }
     
-    render() {   
+    render() {
+        const { onIncrement, onDelete, counter } = this.props;
+
         return (
             <React.Fragment>
                 <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
                 
-                <button onClick={() => this.props.onIncrement(this.props.counter)} className='btn btn-secondary btn-sm m-2'>Increment</button>
+                <button onClick={() => onIncrement(counter)} className='btn btn-secondary btn-sm m-2'>Increment</button>
 
-                <button onClick={() => this.props.onDelete(this.props.counter.id)} className="btn btn-danger btn-sm m-2" >Delete</button>
+                <button onClick={() => onDelete(counter.id)} className="btn btn-danger btn-sm m-2" >Delete</button>
                 <br />
                 {/* {this.renderTags()} */}
             </React.Fragment>
